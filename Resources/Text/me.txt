@@ -1,0 +1,18 @@
+﻿👤 {0}
+🏆 Level: {1} (Exp: {2}/{3}, {4}%)
+❤️ Health: {5}/{6}
+🔋 Stamina: {7}/{8} {9}
+👣 Movement: {10}/{11} {12}
+🪙 Money: {13}
+💎 Gems: {14}
+
+📍 {15}
+
+⚖️ Cargo: {16}/{17} Kg
+🧳 Inventory /inventory
+📜 Hero /hero
+
+📎 Rank: {18} /shop
+{19} /guild
+
+⚙️ Settings /settings
