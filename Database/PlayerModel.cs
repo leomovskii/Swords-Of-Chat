@@ -37,6 +37,14 @@ namespace SwordsOfChat.Database {
 			}
 		}
 
+		public Lang Language {
+			get => Raw.Language;
+			set {
+				Raw.Language = value;
+				SetChanged();
+			}
+		}
+
 		#region Level & Experience 
 
 		public int Level => Raw.Level;
