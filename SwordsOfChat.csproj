@@ -9,11 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Telegram.Bot" Version="22.10.0.1" />
+    <Compile Remove="Resources\Text\**" />
+    <EmbeddedResource Remove="Resources\Text\**" />
+    <None Remove="Resources\Text\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\Text\" />
+    <PackageReference Include="Telegram.Bot" Version="22.10.0.1" />
   </ItemGroup>
 
 </Project>
