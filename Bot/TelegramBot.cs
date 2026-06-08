@@ -144,10 +144,15 @@ namespace SwordsOfChat.Bot {
 			AddCommand(new LicenseBotCommand());
 			AddCommand(new HeroBotCommand());
 			AddCommand(new LangBotCommand());
+			AddCommand(new SettingsBotCommand());
 		}
 
 		public static void AddCommand(IBotCommand command) {
 			Commands.TryAdd(command.Key, command);
+		}
+
+		public static string? TryCallCommandUnsafe(long userId, string[] args) {
+			return Commands.TryGetValue(args[0], out var command) ? command.Run(userId, args) : null;
 		}
 
 		private static async Task ProcessCommand(ITelegramBotClient bot, Message message, CancellationToken ct) {

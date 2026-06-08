@@ -1,4 +1,6 @@
 ﻿
+using SwordsOfChat.Localization;
+
 namespace SwordsOfChat.Database {
 	internal class PlayerRawModel {
 		public long UserId { get; set; }

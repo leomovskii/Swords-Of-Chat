@@ -1,4 +1,5 @@
 ﻿using SwordsOfChat.Game;
+using SwordsOfChat.Localization;
 
 namespace SwordsOfChat.Database {
 	internal class PlayerModel {
