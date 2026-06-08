@@ -79,6 +79,73 @@ namespace SwordsOfChat.Database {
 		public Parameter Movement { get; private set; }
 
 		#endregion
+		#region Stats
+
+		public int Strength {
+			get => Raw.Strength;
+			set {
+				value = Math.Max(value, 0);
+				if (Raw.Strength != value) {
+					Raw.Strength = value;
+					SetChanged();
+				}
+			}
+		}
+
+		public int Endurance {
+			get => Raw.Endurance;
+			set {
+				value = Math.Max(value, 0);
+				if (Raw.Endurance != value) {
+					Raw.Endurance = value;
+					SetChanged();
+				}
+			}
+		}
+
+		public int Agility {
+			get => Raw.Agility;
+			set {
+				value = Math.Max(value, 0);
+				if (Raw.Agility != value) {
+					Raw.Agility = value;
+					SetChanged();
+				}
+			}
+		}
+
+		#endregion
+		#region Values
+
+		public int AttackDamage {
+			get => 20;
+		}
+
+		public AttackSpeed AttackSpeed {
+			get => AttackSpeed.Normal;
+		}
+
+		public int Armor {
+			get => 20;
+		}
+
+		public int CritChance {
+			get => 20;
+		}
+
+		public int CritDamage {
+			get => 20;
+		}
+
+		public int Accurancy {
+			get => 20;
+		}
+
+		public int Evasion {
+			get => 20;
+		}
+
+		#endregion
 
 		public int Money {
 			get => Raw.Money;

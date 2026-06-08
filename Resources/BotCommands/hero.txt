@@ -1,0 +1,30 @@
+﻿👤 {0}
+🏆 Level: {1} (Exp: {2}/{3}, {4}%) /info_exp
+❤️ Health: {5}/{6} /info_hp
+🔋 Stamina: {7}/{8} {9} /info_sta
+👣 Movement: {10}/{11} {12} /info_mov
+🪙 Money: {13} /info_mon
+💎 Gems: {14} /info_gem
+
+📍 {15}
+
+💪 Strength: {16} /info_str
+💪 Endurance: {17} /info_end
+💪 Agility: {18} /info_agi
+
+🗡Attack Damage: {19} /info_dmg
+⚡️Attack Speed: {20} /info_ats
+🛡 Armor: {21} /info_arm
+🎯 Critical Strike Chance: {22} /info_crit_cha
+💥 Critical Strike Damage: {23} /info_crit_dmg
+☄️ Accurancy: {24} /info_acc
+💨 Evasion: {25} /info_eva
+
+⚖️ Cargo: {26}/{27} Kg
+🧳 Inventory /inventory
+📜 Hero /hero
+
+📎 Rank: {28} /shop
+{29} /guild
+
+⚙️ Settings /settings

@@ -19,6 +19,10 @@ namespace SwordsOfChat.Database {
 		public int TotalMovement { get; set; }
 		public long MovementTimestamp { get; set; }
 
+		public int Strength { get; set; }
+		public int Endurance { get; set; }
+		public int Agility { get; set; }
+
 		public int Money { get; set; }
 		public int Gems { get; set; }
 
