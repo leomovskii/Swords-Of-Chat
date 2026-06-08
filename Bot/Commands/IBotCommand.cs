@@ -2,6 +2,6 @@
 	internal interface IBotCommand {
 		string Key { get; }
 		bool KeyIsPrefix { get; }
-		string? Run(long userId, string command);
+		string? Run(long userId, string[] args);
 	}
 }
