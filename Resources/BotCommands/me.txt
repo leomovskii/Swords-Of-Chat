@@ -12,7 +12,8 @@
 🧳 Inventory /inventory
 📜 Hero /hero
 
-📎 Rank: {18} /shop
+📯 Rank: {18}
 {19} /guild
 
+💰 Shop /shop
 ⚙️ Settings /settings
