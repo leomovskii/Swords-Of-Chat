@@ -3,6 +3,7 @@ using SwordsOfChat.Game;
 
 namespace SwordsOfChat.Bot.Commands {
 	internal class MeBotCommand : IBotCommand {
+
 		public string Key => "me";
 
 		public string? Run(long userId) {

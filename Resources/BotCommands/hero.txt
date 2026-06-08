@@ -6,7 +6,7 @@
 🪙 Money: {13} /info_mon
 💎 Gems: {14} /info_gem
 
-📍 {15}
+📍 {15} /map
 
 💪 Strength: {16} /info_str
 💪 Endurance: {17} /info_end
