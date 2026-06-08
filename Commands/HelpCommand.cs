@@ -1,4 +1,4 @@
-﻿namespace TgGame.Commands {
+﻿namespace SwordsOfChat.Commands {
 	internal class HelpCommand : ICommand {
 
 		public string Key => "help";

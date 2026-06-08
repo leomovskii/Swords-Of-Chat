@@ -1,6 +1,6 @@
-﻿using TgGame.Game;
+﻿using SwordsOfChat.Game;
 
-namespace TgGame.Database {
+namespace SwordsOfChat.Database {
 	internal class PlayerModel {
 
 		#region Core

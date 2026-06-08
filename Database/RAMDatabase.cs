@@ -1,4 +1,4 @@
-﻿namespace TgGame.Database {
+﻿namespace SwordsOfChat.Database {
 	internal class RAMDatabase : IDatabase {
 
 		private readonly Dictionary<long, PlayerModel> Players = [];

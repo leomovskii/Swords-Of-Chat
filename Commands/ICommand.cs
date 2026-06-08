@@ -1,4 +1,4 @@
-﻿namespace TgGame.Commands {
+﻿namespace SwordsOfChat.Commands {
 	internal interface ICommand {
 		string Key { get; }
 		string[] Aliases { get; }

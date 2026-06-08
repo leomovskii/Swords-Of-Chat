@@ -1,6 +1,6 @@
-﻿using TgGame.Bot;
+﻿using SwordsOfChat.Bot;
 
-namespace TgGame.Commands {
+namespace SwordsOfChat.Commands {
 	internal class ConfigCommand : ICommand {
 
 		public string Key => "config";

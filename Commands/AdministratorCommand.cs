@@ -1,4 +1,4 @@
-﻿namespace TgGame.Commands {
+﻿namespace SwordsOfChat.Commands {
 	internal class AdministratorCommand : ICommand {
 		public string Key => "administrator";
 		public string[] Aliases => ["adm", "admin"];

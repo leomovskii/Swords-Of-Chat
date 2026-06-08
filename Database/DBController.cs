@@ -1,4 +1,4 @@
-﻿namespace TgGame.Database {
+﻿namespace SwordsOfChat.Database {
 	internal static class DBController {
 
 		private static IDatabase? _instance;

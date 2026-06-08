@@ -1,7 +1,6 @@
-﻿
-using TgGame.Database;
+﻿using SwordsOfChat.Database;
 
-namespace TgGame.Game {
+namespace SwordsOfChat.Game {
 	internal static class GameHelper {
 		public static int GetExpToLevel(int targetLevel) {
 			return 10 * Math.Max(targetLevel, 2);

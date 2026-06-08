@@ -1,7 +1,7 @@
-﻿using TgGame.Database;
-using TgGame.Game;
+﻿using SwordsOfChat.Database;
+using SwordsOfChat.Game;
 
-namespace TgGame.BotCommands {
+namespace SwordsOfChat.Bot.Commands {
 	internal class MeBotCommand : IBotCommand {
 		public string Key => "me";
 

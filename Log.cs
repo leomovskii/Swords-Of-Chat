@@ -1,4 +1,4 @@
-﻿namespace TgGame {
+﻿namespace SwordsOfChat {
 	internal enum LogLevel {
 		Info, Warning, Error
 	}

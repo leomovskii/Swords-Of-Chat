@@ -1,9 +1,9 @@
-﻿using System.Runtime.InteropServices;
-using TgGame.Bot;
-using TgGame.Commands;
-using TgGame.Database;
+﻿using SwordsOfChat.Bot;
+using SwordsOfChat.Commands;
+using SwordsOfChat.Database;
+using System.Runtime.InteropServices;
 
-namespace TgGame {
+namespace SwordsOfChat {
 	internal class Program {
 
 		public readonly static Dictionary<string, ICommand> Commands = [];

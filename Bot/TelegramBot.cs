@@ -1,10 +1,10 @@
-﻿using Telegram.Bot;
+﻿using SwordsOfChat.Bot.Commands;
+using Telegram.Bot;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
-using TgGame.BotCommands;
 
-namespace TgGame.Bot {
+namespace SwordsOfChat.Bot {
 	internal static class TelegramBot {
 
 		#region App behaviour
@@ -141,6 +141,7 @@ namespace TgGame.Bot {
 			Commands.Clear();
 
 			AddCommand(new MeBotCommand());
+			AddCommand(new LicenseBotCommand());
 		}
 
 		public static void AddCommand(IBotCommand command) {

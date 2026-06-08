@@ -1,4 +1,4 @@
-﻿namespace TgGame.BotCommands {
+﻿namespace SwordsOfChat.Bot.Commands {
 	internal class LicenseBotCommand : IBotCommand {
 		public string Key => "license";
 

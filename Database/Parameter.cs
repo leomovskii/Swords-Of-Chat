@@ -1,4 +1,4 @@
-﻿namespace TgGame.Database {
+﻿namespace SwordsOfChat.Database {
 	internal class Parameter(int value, int total, long timestamp) {
 
 		public int Value { get; private set; } = value;

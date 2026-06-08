@@ -1,4 +1,4 @@
-﻿namespace TgGame.Commands {
+﻿namespace SwordsOfChat.Commands {
 	internal class ModeratorCommand : ICommand {
 		public string Key => "moderator";
 		public string[] Aliases => ["mod", "moder"];

@@ -1,5 +1,5 @@
 ﻿
-namespace TgGame.Database {
+namespace SwordsOfChat.Database {
 	internal class PlayerRawModel {
 		public long UserId { get; set; }
 		public string Username { get; set; } = "Player";

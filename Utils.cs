@@ -1,4 +1,4 @@
-﻿namespace TgGame {
+﻿namespace SwordsOfChat {
 	internal static class Utils {
 		public static bool TryParseIDToken(string text, out long userId) {
 			string t = text?.TrimStart() ?? "";

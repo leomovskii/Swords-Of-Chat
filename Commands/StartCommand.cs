@@ -1,6 +1,6 @@
-﻿using TgGame.Bot;
+﻿using SwordsOfChat.Bot;
 
-namespace TgGame.Commands {
+namespace SwordsOfChat.Commands {
 	internal class StartCommand : ICommand {
 
 		public string Key => "start";

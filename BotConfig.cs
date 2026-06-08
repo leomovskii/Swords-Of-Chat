@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Text.Json;
 
-namespace TgGame {
+namespace SwordsOfChat {
 	internal struct BotRawConfig {
 
 		public string Token { get; set; } = string.Empty;

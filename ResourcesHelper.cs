@@ -1,4 +1,4 @@
-﻿namespace TgGame {
+﻿namespace SwordsOfChat {
 	internal static class ResourcesHelper {
 		#region Text
 
