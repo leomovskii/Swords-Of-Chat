@@ -156,7 +156,8 @@ namespace SwordsOfChat.Bot {
 			if (commandText == null || from == null)
 				return;
 
-			if (!Commands.TryGetValue(commandText.Trim()[1..], out var command))
+			string cmd = commandText.Trim()[1..];
+			if (!Commands.TryGetValue(cmd, out var command))
 				return;
 
 			long userId = from.Id;
@@ -164,7 +165,7 @@ namespace SwordsOfChat.Bot {
 			try {
 				Log.Info($"{userId} calls {command.Key} with input '{commandText}'");
 
-				string? response = command.Run(userId);
+				string? response = command.Run(userId, cmd);
 				if (response != null)
 					await bot.SendMessage(message.Chat.Id, response, cancellationToken: ct);
 

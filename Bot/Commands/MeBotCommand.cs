@@ -5,8 +5,9 @@ namespace SwordsOfChat.Bot.Commands {
 	internal class MeBotCommand : IBotCommand {
 
 		public string Key => "me";
+		public bool KeyIsPrefix => false;
 
-		public string? Run(long userId) {
+		public string? Run(long userId, string _) {
 			if (!ResourcesHelper.TryGetText(Key, out string rawText))
 				return null;
 
