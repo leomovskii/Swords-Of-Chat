@@ -5,7 +5,6 @@ namespace SwordsOfChat.Bot.Commands {
 	internal class HeroBotCommand : IBotCommand {
 
 		public string Key => "hero";
-		public bool KeyIsPrefix => false;
 
 		public string? Run(long userId, string[] _) {
 			if (!ResourcesHelper.TryGetText(Key, out string rawText))
