@@ -1,6 +1,5 @@
 ﻿namespace SwordsOfChat {
 	internal static class ResourcesHelper {
-		#region Text
 
 		private readonly static Dictionary<string, string> Texts = [];
 
@@ -17,7 +16,7 @@
 			}
 
 			try {
-				using StreamReader reader = new StreamReader($"../../../Resources/Text/{key}.txt");
+				using StreamReader reader = new StreamReader($"../../../Resources/BotCommands/{key}.txt");
 				string data = reader.ReadToEnd().Trim();
 				Texts.TryAdd(key, data);
 
@@ -30,7 +29,5 @@
 				return false;
 			}
 		}
-
-		#endregion
 	}
 }
