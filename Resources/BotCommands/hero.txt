@@ -18,7 +18,7 @@
 🗡 Lethality: {22} /info_let
 🎯 Critical Strike Chance: {23} /info_crit_cha
 💥 Critical Strike Damage: {24} /info_crit_dmg
-☄️ Accurancy: {25} /info_acc
+☄️ Accuracy: {25} /info_acc
 💨 Evasion: {26} /info_eva
 🦶 Tenacity: {27} /info_ten
 

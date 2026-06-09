@@ -21,7 +21,7 @@
 			AddInfoCommand("armor", InfoArmor, ["defence", "arm", "def"]);
 			AddInfoCommand("lethality", InfoLethality, "let");
 			AddInfoCommand("critical_strike", InfoCriticalStrike, ["criticalstrike", "critical_chance", "criticalchance", "critical_power", "criticalpower", "crit_strike", "critstrike", "crit_chance", "critchance", "crit_power", "critpower", "crit"]);
-			AddInfoCommand("accurancy", InfoAccurancy, "acc");
+			AddInfoCommand("accuracy", InfoAccuracy, "acc");
 			AddInfoCommand("evasion", InfoEvasion, "eva");
 			AddInfoCommand("tenacity", InfoTenacity, "ten");
 			AddInfoCommand("guild", InfoGuild, ["clan", "gld", "cln"]);
@@ -111,7 +111,7 @@
 			return null; // todo
 		}
 
-		private string? InfoAccurancy(long userId) {
+		private string? InfoAccuracy(long userId) {
 			return null; // todo
 		}
 

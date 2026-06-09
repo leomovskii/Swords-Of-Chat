@@ -49,7 +49,7 @@ namespace SwordsOfChat.Bot.Commands {
 			var e22 = p.Lethality;
 			var e23 = p.CritChance;
 			var e24 = p.CritDamage;
-			var e25 = p.Accurancy;
+			var e25 = p.Accuracy;
 			var e26 = p.Evasion;
 			var e27 = p.Tenacity;
 

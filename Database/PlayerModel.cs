@@ -151,7 +151,7 @@ namespace SwordsOfChat.Database {
 			get => 20;
 		}
 
-		public int Accurancy {
+		public int Accuracy {
 			get => 20;
 		}
 
