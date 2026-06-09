@@ -146,16 +146,23 @@ namespace SwordsOfChat.Bot {
 			AddCommand(new LangBotCommand());
 			AddCommand(new SettingsBotCommand());
 			AddCommand(new InfoBotCommand());
+			AddCommand(new RulesBotCommand());
 
 			AddCommand(new TODOGuildBotCommand());
 			AddCommand(new TODOInventoryBotCommand());
 			AddCommand(new TODOMapBotCommand());
 			AddCommand(new TODOShopBotCommand());
 			AddCommand(new TODOSupportBotCommand());
+			AddCommand(new TODOKarmaBotCommand());
 		}
 
 		public static void AddCommand(IBotCommand command) {
-			Commands.TryAdd(command.Key, command);
+			if (!Commands.TryAdd(command.Key, command))
+				Log.Error($"Unable to add bot command: {command.Key}");
+
+			foreach (var e in command.Aliases)
+				if (!Commands.TryAdd(e, command))
+					Log.Error($"Unable to add alias '{e}' of bot command '{command.Key}'.");
 		}
 
 		public static string? TryCallCommandUnsafe(long userId, string[] args) {

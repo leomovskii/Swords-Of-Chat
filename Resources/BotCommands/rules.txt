@@ -1,0 +1,24 @@
+﻿‼️ Rules
+{0}
+🔴 Forbidden
+1. Violation of license terms (see /about for details);
+2. Attacks or attempts to disrupt project infrastructure;
+3. Impersonation of administration or official project representatives;
+4. Buying, selling, or exchanging in-game assets, currency, or accounts for real money, cryptocurrency, NFTs, or any off-platform payment methods;
+5. Any actions that violate fair play principles, including multi-accounting, use of bots and automation scripts, as well as exploiting bugs, vulnerabilities, or in-game errors.
+
+The administration reserves the right to apply sanctions for violations not explicitly listed in this document.
+
+⚖️ Sanctions
+
+The severity of punishment depends on the seriousness of the violation and the damage caused — from temporary restrictions to permanent account bans.
+
+The administration reserves the right to restrict access to the project for any player who violates the rules or acts against fair play principles, even if such actions are not explicitly listed above.
+
+In case of significant harm to the project, the administration reserves the right to protect its interests through legal channels.
+
+🛠 Support
+
+If you find a bug or vulnerability, want to report a violation, suggest an idea, or contact support — use /support.
+
+Advertising proposals are not considered.

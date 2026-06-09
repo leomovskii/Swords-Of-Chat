@@ -7,6 +7,7 @@ namespace SwordsOfChat.Bot.Commands {
 		public const string Key0 = "settings";
 
 		public string Key => Key0;
+		public string[] Aliases => ["options"];
 
 		public string? Run(long userId, string[] _) {
 			if (!ResourcesHelper.TryGetText(Key, out string rawText))
@@ -32,7 +33,7 @@ namespace SwordsOfChat.Bot.Commands {
 			}
 			var e1 = sb.ToString();
 
-			return string.Format(rawText, e0,e1);
+			return string.Format(rawText, e0, e1);
 		}
 	}
 }

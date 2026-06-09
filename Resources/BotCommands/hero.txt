@@ -1,33 +1,34 @@
 ﻿👤 {0}
-🏆 Level: {1} (Exp: {2}/{3}, {4}%) /info_exp
-❤️ Health: {5}/{6} /info_hp
-🔋 Stamina: {7}/{8} {9} /info_sta
-👣 Movement: {10}/{11} {12} /info_mov
-🪙 Money: {13} /info_mon
-💎 Gems: {14} /info_gem
+⚜️ Karma: {1}/{2} (3) /karma
+🏆 Level: {4} (Exp: {5}/{6}, {7}%) /info_exp
+❤️ Health: {8}/{9} /info_hp
+🔋 Stamina: {10}/{11}{12} /info_sta
+👣 Movement: {13}/{14}{15} /info_mov
+🪙 Money: {16} /info_mon
+💎 Gems: {17} /info_gem
 
-📍 {15} /map
+📍 {18} /map
 
-💪 Strength: {16} /info_str
-💪 Endurance: {17} /info_end
-💪 Agility: {18} /info_agi
+💪 Strength: {19} /info_str
+💪 Endurance: {20} /info_end
+💪 Agility: {21} /info_agi
 
-⚔️ Attack Damage: {19} /info_dmg
-⚡️ Attack Speed: {20} /info_ats
-🛡 Armor: {21} /info_arm
-🗡 Lethality: {22} /info_let
-🎯 Critical Strike Chance: {23} /info_crit_cha
-💥 Critical Strike Damage: {24} /info_crit_dmg
-☄️ Accuracy: {25} /info_acc
-💨 Evasion: {26} /info_eva
-🦶 Tenacity: {27} /info_ten
+⚔️ Attack Damage: {22} /info_dmg
+⚡️ Attack Speed: {23} /info_ats
+🛡 Armor: {24} /info_arm
+🗡 Lethality: {25} /info_let
+🎯 Critical Strike Chance: {26} /info_crit_cha
+💥 Critical Strike Damage: {27} /info_crit_dmg
+☄️ Accuracy: {28} /info_acc
+💨 Evasion: {29} /info_eva
+🦶 Tenacity: {30} /info_ten
 
-⚖️ Cargo: {28}/{29} Kg
+⚖️ Cargo: {31}/{32} Kg
 🧳 Inventory /inventory
 📜 Hero /hero
 
-📯 Rank: {30} /info_prestige
-{31} /guild
+📯 Rank: {33} /info_prestige
+{34} /guild
 
 💰 Shop /shop
 ⚙️ Settings /settings

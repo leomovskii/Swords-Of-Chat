@@ -1,4 +1,5 @@
 ﻿
+using SwordsOfChat.Game;
 using SwordsOfChat.Localization;
 using SwordsOfChat.Purchasing;
 
@@ -8,6 +9,7 @@ namespace SwordsOfChat.Database {
 		public string Username { get; set; } = "Player";
 		public Lang Language { get; set; }
 
+		public int Karma { get; set; } = GameConstants.InitialKarmaLevel;
 		public int Level { get; set; } = 1;
 		public int Experience { get; set; } = 0;
 

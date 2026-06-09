@@ -1,6 +1,5 @@
 ﻿using SwordsOfChat.Game;
 using SwordsOfChat.Localization;
-using SwordsOfChat.Purchasing;
 
 namespace SwordsOfChat.Database {
 	internal class PlayerModel {
@@ -34,16 +33,20 @@ namespace SwordsOfChat.Database {
 		public string Username {
 			get => Raw.Username;
 			set {
-				Raw.Username = value;
-				SetChanged();
+				if (Raw.Username != value) {
+					Raw.Username = value;
+					SetChanged();
+				}
 			}
 		}
 
 		public Lang Language {
 			get => Raw.Language;
 			set {
-				Raw.Language = value;
-				SetChanged();
+				if (Raw.Language != value) {
+					Raw.Language = value;
+					SetChanged();
+				}
 			}
 		}
 
@@ -165,6 +168,16 @@ namespace SwordsOfChat.Database {
 
 		#endregion
 
+		public int Karma {
+			get => Raw.Karma;
+			set {
+				if (Raw.Karma != value) {
+					Raw.Karma = value;
+					SetChanged();
+				}
+			}
+		}
+
 		public int Money {
 			get => Raw.Money;
 			set {
@@ -205,8 +218,10 @@ namespace SwordsOfChat.Database {
 		public int Prestige {
 			get => Raw.Prestige;
 			set {
-				Raw.Prestige = value;
-				SetChanged();
+				if (Raw.Prestige != value) {
+					Raw.Prestige = value;
+					SetChanged();
+				}
 			}
 		}
 
@@ -215,8 +230,10 @@ namespace SwordsOfChat.Database {
 		public string GuildTag {
 			get => Raw.GuildTag;
 			set {
-				Raw.GuildTag = value;
-				SetChanged();
+				if (Raw.GuildTag != value) {
+					Raw.GuildTag = value;
+					SetChanged();
+				}
 			}
 		}
 

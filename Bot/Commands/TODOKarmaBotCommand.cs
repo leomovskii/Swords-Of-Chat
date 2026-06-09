@@ -1,7 +1,7 @@
 ﻿namespace SwordsOfChat.Bot.Commands {
-	internal class TODOGuildBotCommand : IBotCommand {
+	internal class TODOKarmaBotCommand : IBotCommand {
 
-		public string Key => "guild";
+		public string Key => "karma";
 		public string[] Aliases => [];
 
 		public string? Run(long userId, string[] _) {

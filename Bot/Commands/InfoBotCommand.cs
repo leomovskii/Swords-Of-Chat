@@ -4,6 +4,7 @@
 		private readonly Dictionary<string, Func<long, string?>> All = [];
 
 		public string Key => "info";
+		public string[] Aliases => [];
 
 		public InfoBotCommand() {
 			AddInfoCommand("experience", InfoExperience, "exp");

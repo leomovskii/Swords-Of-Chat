@@ -25,5 +25,39 @@ namespace SwordsOfChat.Game {
 		internal static string GetLocationTitle((int x, int y) coords) {
 			return $"Untitled, {coords.x + 1}x{coords.y + 1}";
 		}
+
+		public static string GetKarmaName(int level) {
+			if (level < 1)
+				return "Cursed";
+
+			if (level < 50)
+				return "Extremely Low";
+
+			if (level < 100)
+				return "Very Low";
+
+			if (level < 200)
+				return "Low";
+
+			if (level < 400)
+				return "Decreased";
+
+			if (level < 700)
+				return "Normal";
+
+			if (level < 800)
+				return "Good";
+
+			if (level < 900)
+				return "Enhanced";
+
+			if (level < 950)
+				return "High";
+
+			if (level < 999)
+				return "Very High";
+
+			return "Divine";
+		}
 	}
 }

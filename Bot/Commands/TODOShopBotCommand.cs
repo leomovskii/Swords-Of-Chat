@@ -2,6 +2,7 @@
 	internal class TODOShopBotCommand : IBotCommand {
 
 		public string Key => "shop";
+		public string[] Aliases => ["market"];
 
 		public string? Run(long userId, string[] _) {
 			return null; // todo

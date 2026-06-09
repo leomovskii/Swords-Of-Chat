@@ -7,6 +7,7 @@ namespace SwordsOfChat.Bot.Commands {
 		public const string Key0 = "lang";
 
 		public string Key => Key0;
+		public string[] Aliases => ["locale"];
 
 		public string? Run(long userId, string[] args) {
 			if (args.Length == 1)
