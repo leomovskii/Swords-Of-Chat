@@ -145,6 +145,7 @@ namespace SwordsOfChat.Bot {
 			AddCommand(new HeroBotCommand());
 			AddCommand(new LangBotCommand());
 			AddCommand(new SettingsBotCommand());
+			AddCommand(new InfoBotCommand());
 		}
 
 		public static void AddCommand(IBotCommand command) {

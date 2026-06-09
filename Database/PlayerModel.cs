@@ -139,6 +139,10 @@ namespace SwordsOfChat.Database {
 			get => 20;
 		}
 
+		public int Lethality {
+			get => 20;
+		}
+
 		public int CritChance {
 			get => 20;
 		}
@@ -152,6 +156,10 @@ namespace SwordsOfChat.Database {
 		}
 
 		public int Evasion {
+			get => 20;
+		}
+
+		public int Tenacity {
 			get => 20;
 		}
 
