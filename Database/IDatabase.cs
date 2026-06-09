@@ -2,6 +2,10 @@
 	internal interface IDatabase {
 		bool HasPlayerModel(long userId);
 		bool TryGetPlayerModel(long userId, out PlayerModel? model);
-		void CreatePlayerModel(long userId);
+		PlayerModel? CreatePlayerModel(long userId);
+
+		bool HasGuild(string tag);
+		bool TryGetGuild(string tag, out Guild guild);
+		Guild CreateGuild(string title, string tag, string avatar);
 	}
 }

@@ -24,7 +24,7 @@
 🧳 Inventory /inventory
 📜 Hero /hero
 
-📯 Rank: {28} /info_rank
+📯 Rank: {28} /info_prestige
 {29} /guild
 
 💰 Shop /shop

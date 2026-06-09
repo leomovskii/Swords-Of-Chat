@@ -1,5 +1,6 @@
 ﻿using SwordsOfChat.Game;
 using SwordsOfChat.Localization;
+using SwordsOfChat.Purchasing;
 
 namespace SwordsOfChat.Database {
 	internal class PlayerModel {
@@ -193,20 +194,24 @@ namespace SwordsOfChat.Database {
 			}
 		}
 
-		public int Rank {
-			get => Raw.Rank;
+		public int Prestige {
+			get => Raw.Prestige;
 			set {
-				Raw.Rank = value;
+				Raw.Prestige = value;
 				SetChanged();
 			}
 		}
 
-		public int GuildId {
-			get => Raw.GuildId;
+		#region Guild
+
+		public string GuildTag {
+			get => Raw.GuildTag;
 			set {
-				Raw.GuildId = value;
+				Raw.GuildTag = value;
 				SetChanged();
 			}
 		}
+
+		#endregion
 	}
 }
