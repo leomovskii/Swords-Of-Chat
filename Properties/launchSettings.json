@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SwordsOfChat": {
+      "commandName": "Project",
+      "commandLineArgs": "-sb"
+    }
+  }
+}

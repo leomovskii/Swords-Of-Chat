@@ -3,7 +3,9 @@
 namespace SwordsOfChat.Commands {
 	internal class StartCommand : ICommand {
 
-		public string Key => "start";
+		public const string Key0 = "start";
+
+		public string Key => Key0;
 		public string[] Aliases => [];
 		public string Help => "Start bot.";
 		public string? DetailedHelp => Help;

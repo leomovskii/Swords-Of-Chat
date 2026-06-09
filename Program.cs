@@ -24,6 +24,7 @@ namespace SwordsOfChat {
 			RegisterCommand(new ConfigCommand());
 			RegisterCommand(new AdministratorCommand());
 			RegisterCommand(new ModeratorCommand());
+			RegisterCommand(new ArgsCommand());
 
 			TelegramBot.RegisterDefaultCommands();
 
@@ -36,9 +37,12 @@ namespace SwordsOfChat {
 			if (args == null || args.Length == 0)
 				return;
 
-			if (args.Contains("-restart") || args.Contains("-start"))
-				if (Commands.TryGetValue("restart", out var command))
+			if (args.Contains(ArgsCommand.StartBotArg))
+				if (Commands.TryGetValue(StartCommand.Key0, out var command))
 					command.Run([]);
+
+			if (args.Contains(ArgsCommand.LocateConfigArg))
+				BotConfig.OpenFileLocationAndSelectConfig();
 		}
 
 		private static async Task ListenCommands() {
