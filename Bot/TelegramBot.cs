@@ -4,7 +4,6 @@ using Telegram.Bot;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace SwordsOfChat.Bot {
 	internal static class TelegramBot {
@@ -164,6 +163,7 @@ namespace SwordsOfChat.Bot {
 			AddCommand(new TODOMapBotCommand());
 			AddCommand(new TODOShopBotCommand());
 			AddCommand(new TODOSupportBotCommand());
+			AddCommand(new TODOBountyBotCommand());
 		}
 
 		public static void AddCommand(IBotCommand command) {
