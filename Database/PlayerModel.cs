@@ -183,9 +183,11 @@ namespace SwordsOfChat.Database {
 				if (location == Raw.Location)
 					return;
 
-				if (location >= 0 && location < GameConstants.WorldWidth * GameConstants.WorldHeight) {
+				int wh = GameConfig.Instance.WorldWidth * GameConfig.Instance.WorldHeight;
+				if (location >= 0 && location < wh) {
 					Raw.Location = location;
 					SetChanged();
+
 				} else
 					Log.Error($"Detect attempt for ${Raw.UserId} to move outside from world: from={Raw.Location} to={location}.");
 			}

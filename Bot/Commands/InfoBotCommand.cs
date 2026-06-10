@@ -14,6 +14,7 @@ namespace SwordsOfChat.Bot.Commands {
 
 		public InfoBotCommand() {
 			AddInfoCommand("experience", InfoExperience, ["wisdom", "exp", "wis"]);
+			AddInfoCommand("karma", InfoKarma);
 			AddInfoCommand("health", InfoHealth, "hp");
 			AddInfoCommand("vigor", InfoVigor, "vig");
 			AddInfoCommand("movement", InfoMovement, ["mvnt", "move", "mov"]);
@@ -78,6 +79,10 @@ namespace SwordsOfChat.Bot.Commands {
 			var e1 = GameHelper.GetWisdomFor(p.Karma);
 
 			return string.Format(rawText, e0, e1);
+		}
+
+		private string? InfoKarma(long userId) {
+			return null; // todo
 		}
 
 		private string? InfoHealth(long userId) {

@@ -1,7 +1,6 @@
 ﻿using SwordsOfChat.Database;
 using SwordsOfChat.Game;
 using SwordsOfChat.Localization;
-using SwordsOfChat.Purchasing;
 
 namespace SwordsOfChat.Bot.Commands {
 	internal class MeBotCommand : IBotCommand {
@@ -38,7 +37,7 @@ namespace SwordsOfChat.Bot.Commands {
 			var e15 = currentCargo.ToString("0.##");
 			var e16 = totalCargo.ToString("0.##");
 
-			var e17 = PurchasingManager.GetCurrentRank(p.Prestige);
+			var e17 = GameConfig.GetCurrentRank(p.Prestige);
 			var e18 = guild.GetFullTitle();
 
 			return string.Format(rawText,

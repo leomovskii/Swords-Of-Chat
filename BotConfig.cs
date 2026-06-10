@@ -3,7 +3,6 @@ using System.Text.Json;
 
 namespace SwordsOfChat {
 	internal struct BotRawConfig {
-
 		public string Token { get; set; } = string.Empty;
 		public long Owner { get; set; } = -1;
 		public long[] Administrators { get; set; } = [];

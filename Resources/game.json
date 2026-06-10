@@ -1,0 +1,17 @@
+{
+  "PrestigeToRankLevels": [
+    10,
+    200,
+    600,
+    1400,
+    2900,
+    5100,
+    7000
+  ],
+  "InitialKarma": 700,
+  "MaxKarma": 1000,
+  "VigorRegenTimeSeconds": 3600,
+  "MovementRegenTimeSeconds": 3600,
+  "WorldWidth": 20,
+  "WorldHeight": 20
+}

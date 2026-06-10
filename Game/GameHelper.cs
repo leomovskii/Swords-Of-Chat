@@ -2,9 +2,6 @@
 
 namespace SwordsOfChat.Game {
 	internal static class GameHelper {
-		public static int GetExpToLevel(int targetLevel) {
-			return 10 * Math.Max(targetLevel, 2);
-		}
 
 		internal static (float currentCargo, float totalCargo) CalculateCargo(PlayerModel p) {
 			return (0f, 0f);
@@ -40,11 +37,11 @@ namespace SwordsOfChat.Game {
 		#region Location
 
 		public static (int x, int y) LocationToCoords(int location) {
-			return (location % GameConstants.WorldWidth, location / GameConstants.WorldWidth);
+			return (location % GameConfig.Instance.WorldWidth, location / GameConfig.Instance.WorldWidth);
 		}
 
 		public static int CoordsToLocation((int x, int y) coords) {
-			return coords.x + coords.y * GameConstants.WorldWidth;
+			return coords.x + coords.y * GameConfig.Instance.WorldWidth;
 		}
 
 		internal static string GetLocationTitle((int x, int y) coords) {
