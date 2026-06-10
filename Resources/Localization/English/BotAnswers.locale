@@ -23,7 +23,7 @@
 
 <<hero>>
 <emoji:player> {0}
-<emoji:karma> Karma: {1} ({2}) /karma
+<emoji:karma> Karma: {1} ({2}) /info_karma
 <emoji:experience> Experience: {3} /info_exp
 <emoji:health> Health: {4}/{5} /info_hp
 <emoji:vigor> Vigor: {6}/{7}{8} /info_vig

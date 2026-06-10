@@ -164,7 +164,6 @@ namespace SwordsOfChat.Bot {
 			AddCommand(new TODOMapBotCommand());
 			AddCommand(new TODOShopBotCommand());
 			AddCommand(new TODOSupportBotCommand());
-			AddCommand(new TODOKarmaBotCommand());
 		}
 
 		public static void AddCommand(IBotCommand command) {
