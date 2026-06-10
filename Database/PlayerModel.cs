@@ -50,41 +50,17 @@ namespace SwordsOfChat.Database {
 			}
 		}
 
-		#region Level & Experience 
-
-		public int Level => Raw.Level;
-		public int Experience => Raw.Experience;
-
-		public void AddExperience(int expToAdd) {
-			if (expToAdd < 1)
-				return;
-
-			int lvl = Raw.Level;
-			int exp = Raw.Experience + expToAdd;
-
-			int expt = GameHelper.GetExpToLevel(lvl + 1);
-			while (exp >= expt) {
-				exp -= expt;
-				lvl++;
-				expt = GameHelper.GetExpToLevel(lvl + 1);
+		public int Experience {
+			get => Raw.Experience;
+			set {
+				value = Math.Max(value, 0);
+				if (Raw.Experience != value) {
+					Raw.Experience = value;
+					SetChanged();
+				}
 			}
-
-			Raw.Level = lvl;
-			Raw.Experience = exp;
-			SetChanged();
 		}
 
-		public void AddLevels(int levelsCount, bool resetExperience) {
-			if (levelsCount < 1)
-				return;
-
-			Raw.Level += levelsCount;
-			if (resetExperience)
-				Raw.Experience = 0;
-			SetChanged();
-		}
-
-		#endregion
 		#region Parameters
 
 		public Parameter Health { get; private set; }

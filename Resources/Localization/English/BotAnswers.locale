@@ -1,21 +1,21 @@
 ﻿<<me>>
 👤 {0}
-⚜️ Karma: {1}/{2} ({3}) /karma
-🏆 Level: {4} (Exp: {5}/{6}, {7}%)
-❤️ Health: {8}/{9}
-🔋 Vigor: {10}/{11}{12}
-👣 Movement: {13}/{14}{15}
-🪙 Money: {16}
-💎 Gems: {17}
+⚜️ Karma: {1} ({2})
+🏆 Experience: {3}
+❤️ Health: {4}/{5}
+🔋 Vigor: {6}/{7}{8}
+👣 Movement: {9}/{10}{11}
+🪙 Money: {12}
+💎 Gems: {13}
 
-📍 {18} /map
+📍 {14} /map
 
-⚖️ Cargo: {19}/{20} Kg
+⚖️ Cargo: {15}/{16} Kg
 🧳 Inventory /inventory
 📜 Hero /hero
 
-📯 Rank: {21} /info_prestige
-{22} /guild
+📯 Rank: {17} /prestige
+{18} /guild
 
 💰 Shop /shop
 ⚙️ Settings /settings
@@ -23,36 +23,36 @@
 
 <<hero>>
 👤 {0}
-⚜️ Karma: {1}/{2} (3) /karma
-🏆 Level: {4} (Exp: {5}/{6}, {7}%) /info_exp
-❤️ Health: {8}/{9} /info_hp
-🔋 Vigor: {10}/{11}{12} /info_vig
-👣 Movement: {13}/{14}{15} /info_mov
-🪙 Money: {16} /info_mon
-💎 Gems: {17} /info_gem
+⚜️ Karma: {1} ({2}) /karma
+🏆 Experience: {3} /info_exp
+❤️ Health: {4}/{5} /info_hp
+🔋 Vigor: {6}/{7}{8} /info_vig
+👣 Movement: {9}/{10}{11} /info_mov
+🪙 Money: {12} /info_mon
+💎 Gems: {13} /info_gem
 
-📍 {18} /map
+📍 {14} /map
 
-💪 Strength: {19} /info_str
-💪 Endurance: {20} /info_end
-💪 Agility: {21} /info_agi
+💪 Strength: {15} /info_str
+💪 Endurance: {16} /info_end
+💪 Agility: {17} /info_agi
 
-⚔️ Attack Damage: {22} /info_dmg
-⚡️ Attack Speed: {23} /info_ats
-🛡 Armor: {24} /info_arm
-🗡 Lethality: {25} /info_let
-🎯 Critical Strike Chance: {26} /info_crit_cha
-💥 Critical Strike Damage: {27} /info_crit_dmg
-☄️ Accuracy: {28} /info_acc
-💨 Evasion: {29} /info_eva
-🦶 Tenacity: {30} /info_ten
+⚔️ Attack Damage: {18} /info_dmg
+⚡️ Attack Speed: {19} /info_ats
+🛡 Armor: {20} /info_arm
+🗡 Lethality: {21} /info_let
+🎯 Critical Strike Chance: {22} /info_crit_cha
+💥 Critical Strike Damage: {23} /info_crit_dmg
+☄️ Accuracy: {24} /info_acc
+💨 Evasion: {25} /info_eva
+🦶 Tenacity: {26} /info_ten
 
-⚖️ Cargo: {31}/{32} Kg
+⚖️ Cargo: {27}/{28} Kg
 🧳 Inventory /inventory
 📜 Hero /hero
 
-📯 Rank: {33} /info_prestige
-{34} /guild
+📯 Rank: {29} /info_rank
+{30} /guild
 
 💰 Shop /shop
 ⚙️ Settings /settings

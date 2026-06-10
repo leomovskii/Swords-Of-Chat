@@ -19,52 +19,47 @@ namespace SwordsOfChat.Bot.Commands {
 			var e0 = (hasGuild ? $"[{guild.Tag}] " : string.Empty) + p.Username;
 
 			var e1 = p.Karma;
-			var e2 = GameConstants.MaxKarmaLevel;
-			var e3 = GameHelper.GetKarmaName(p.Karma);
+			var e2 = GameHelper.GetKarmaName(p.Karma);
 
-			int expTarget = GameHelper.GetExpToLevel(p.Level + 1);
-			var e4 = p.Level;
-			var e5 = p.Experience;
-			var e6 = expTarget;
-			var e7 = ((float) p.Experience / expTarget).ToString("0.##");
+			var e3 = p.Experience;
 
-			var e8 = p.Health.Value;
-			var e9 = p.Health.Total;
+			var e4 = p.Health.Value;
+			var e5 = p.Health.Total;
 
-			(var e10, var e11, var e12) = p.Vigor.GetFormatEntries();
-			(var e13, var e14, var e15) = p.Movement.GetFormatEntries();
+			(var e6, var e7, var e8) = p.Vigor.GetFormatEntries();
+			(var e9, var e10, var e11) = p.Movement.GetFormatEntries();
 
-			var e16 = p.Money;
-			var e17 = p.Gems;
+			var e12 = p.Money;
+			var e13 = p.Gems;
 
-			var e18 = GameHelper.GetLocationTitle(p.Location);
+			var e14 = GameHelper.GetLocationTitle(p.Location);
 
-			var e19 = p.Strength;
-			var e20 = p.Endurance;
-			var e21 = p.Agility;
+			var e15 = p.Strength;
+			var e16 = p.Endurance;
+			var e17 = p.Agility;
 
-			var e22 = p.AttackDamage;
-			var e23 = p.AttackSpeed;
-			var e24 = p.Armor;
-			var e25 = p.Lethality;
-			var e26 = p.CritChance;
-			var e27 = p.CritDamage;
-			var e28 = p.Accuracy;
-			var e29 = p.Evasion;
-			var e30 = p.Tenacity;
+			var e18 = p.AttackDamage;
+			var e19 = p.AttackSpeed;
+			var e20 = p.Armor;
+			var e21 = p.Lethality;
+			var e22 = p.CritChance;
+			var e23 = p.CritDamage;
+			var e24 = p.Accuracy;
+			var e25 = p.Evasion;
+			var e26 = p.Tenacity;
 
 			(float currentCargo, float totalCargo) = GameHelper.CalculateCargo(p);
-			var e31 = currentCargo.ToString("0.##");
-			var e32 = totalCargo.ToString("0.##");
+			var e27 = currentCargo.ToString("0.##");
+			var e28 = totalCargo.ToString("0.##");
 
-			var e33 = PurchasingManager.GetCurrentRank(p.Prestige);
-			var e34 = guild.GetFullTitle();
+			var e29 = PurchasingManager.GetCurrentRank(p.Prestige);
+			var e30 = guild.GetFullTitle();
 
 			return string.Format(rawText,
 				e0, e1, e2, e3, e4, e5, e6, e7, e8, e9,
 				e10, e11, e12, e13, e14, e15, e16, e17, e18, e19,
 				e20, e21, e22, e23, e24, e25, e26, e27, e28, e29,
-				e30, e31, e32, e33, e34);
+				e30);
 		}
 	}
 }

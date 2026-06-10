@@ -8,7 +8,6 @@ namespace SwordsOfChat.Database {
 		public Locale Locale { get; set; } = LocalesManager.DefaultLocale;
 
 		public int Karma { get; set; } = GameConstants.InitialKarmaLevel;
-		public int Level { get; set; } = 1;
 		public int Experience { get; set; } = 0;
 
 		public int CurrentHealth { get; set; }

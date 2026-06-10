@@ -19,37 +19,31 @@ namespace SwordsOfChat.Bot.Commands {
 			var e0 = (hasGuild ? $"[{guild.Tag}] " : string.Empty) + p.Username;
 
 			var e1 = p.Karma;
-			var e2 = GameConstants.MaxKarmaLevel;
-			var e3 = GameHelper.GetKarmaName(p.Karma);
+			var e2 = GameHelper.GetKarmaName(p.Karma);
 
-			int expTarget = GameHelper.GetExpToLevel(p.Level + 1);
-			var e4 = p.Level;
-			var e5 = p.Experience;
-			var e6 = expTarget;
-			var e7 = ((float) p.Experience / expTarget).ToString("0.##");
+			var e3 = p.Experience;
 
-			var e8 = p.Health.Value;
-			var e9 = p.Health.Total;
+			var e4 = p.Health.Value;
+			var e5 = p.Health.Total;
 
-			(var e10, var e11, var e12) = p.Vigor.GetFormatEntries();
-			(var e13, var e14, var e15) = p.Movement.GetFormatEntries();
+			(var e6, var e7, var e8) = p.Vigor.GetFormatEntries();
+			(var e9, var e10, var e11) = p.Movement.GetFormatEntries();
 
-			var e16 = p.Money;
-			var e17 = p.Gems;
+			var e12 = p.Money;
+			var e13 = p.Gems;
 
-			var e18 = GameHelper.GetLocationTitle(p.Location);
+			var e14 = GameHelper.GetLocationTitle(p.Location);
 
 			(float currentCargo, float totalCargo) = GameHelper.CalculateCargo(p);
-			var e19 = currentCargo.ToString("0.##");
-			var e20 = totalCargo.ToString("0.##");
+			var e15 = currentCargo.ToString("0.##");
+			var e16 = totalCargo.ToString("0.##");
 
-			var e21 = PurchasingManager.GetCurrentRank(p.Prestige);
-			var e22 = guild.GetFullTitle();
+			var e17 = PurchasingManager.GetCurrentRank(p.Prestige);
+			var e18 = guild.GetFullTitle();
 
 			return string.Format(rawText,
 				e0, e1, e2, e3, e4, e5, e6, e7, e8, e9,
-				e10, e11, e12, e13, e14, e15, e16, e17, e18, e19,
-				e20, e21, e22);
+				e10, e11, e12, e13, e14, e15, e16, e17, e18);
 		}
 	}
 }
