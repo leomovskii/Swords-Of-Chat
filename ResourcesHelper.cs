@@ -1,4 +1,5 @@
 ﻿namespace SwordsOfChat {
+	[Obsolete]
 	internal static class ResourcesHelper {
 
 		private readonly static Dictionary<string, string> Texts = [];

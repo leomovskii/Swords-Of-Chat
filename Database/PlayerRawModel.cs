@@ -7,7 +7,7 @@ namespace SwordsOfChat.Database {
 	internal class PlayerRawModel {
 		public long UserId { get; set; }
 		public string Username { get; set; } = "Player";
-		public Lang Language { get; set; }
+		public Locale Language { get; set; }
 
 		public int Karma { get; set; } = GameConstants.InitialKarmaLevel;
 		public int Level { get; set; } = 1;

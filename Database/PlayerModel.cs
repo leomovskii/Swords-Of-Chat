@@ -40,7 +40,7 @@ namespace SwordsOfChat.Database {
 			}
 		}
 
-		public Lang Language {
+		public Locale Language {
 			get => Raw.Language;
 			set {
 				if (Raw.Language != value) {

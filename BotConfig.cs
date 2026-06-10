@@ -26,7 +26,7 @@ namespace SwordsOfChat {
 
 		public readonly static string WorkDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, FileName);
 
-		private readonly static JsonSerializerOptions Jso = new JsonSerializerOptions {
+		public readonly static JsonSerializerOptions JSO = new JsonSerializerOptions {
 			WriteIndented = true,
 			PropertyNameCaseInsensitive = true
 		};
@@ -42,14 +42,14 @@ namespace SwordsOfChat {
 		public static bool TryLoad() {
 			try {
 				if (!File.Exists(WorkDir)) {
-					string fileJson = JsonSerializer.Serialize(new BotRawConfig(), Jso);
+					string fileJson = JsonSerializer.Serialize(new BotRawConfig(), JSO);
 					File.WriteAllText(WorkDir, fileJson);
 					Log.Warning($"Config file created: Open {FileName} and setup bot before next run.");
 					return false;
 				}
 
 				string json = File.ReadAllText(WorkDir);
-				var data = JsonSerializer.Deserialize<BotRawConfig>(json, Jso);
+				var data = JsonSerializer.Deserialize<BotRawConfig>(json, JSO);
 				if (!data.Validate()) {
 					Log.Error($"Config reading failed: Setup {FileName} 'Token', 'License' correctly before next run.");
 					return false;
@@ -130,7 +130,7 @@ namespace SwordsOfChat {
 				Config.Administrators = Users.Where(e => e.Value == UserLevel.Administrator).Select(e => e.Key).ToArray();
 				Config.Moderators = Users.Where(e => e.Value == UserLevel.Moderator).Select(e => e.Key).ToArray();
 
-				string json = JsonSerializer.Serialize(Config, Jso);
+				string json = JsonSerializer.Serialize(Config, JSO);
 				File.WriteAllText(WorkDir, json);
 
 				Log.Info("Config saved.");

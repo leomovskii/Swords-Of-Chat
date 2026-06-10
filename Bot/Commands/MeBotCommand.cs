@@ -1,5 +1,6 @@
 ﻿using SwordsOfChat.Database;
 using SwordsOfChat.Game;
+using SwordsOfChat.Localization;
 using SwordsOfChat.Purchasing;
 
 namespace SwordsOfChat.Bot.Commands {
@@ -9,11 +10,10 @@ namespace SwordsOfChat.Bot.Commands {
 		public string[] Aliases => [];
 
 		public string? Run(long userId, string[] _) {
-			if (!ResourcesHelper.TryGetText(Key, out string rawText))
-				return null;
-
 			if (!DBController.Instance.TryGetPlayerModel(userId, out PlayerModel? p) || p == null)
 				return null;
+
+			string rawText = LocalesManager.Localize(p.Language, Key, string.Empty);
 
 			bool hasGuild = DBController.Instance.TryGetGuild(p.GuildTag, out Guild guild);
 			var e0 = (hasGuild ? $"[{guild.Tag}] " : string.Empty) + p.Username;

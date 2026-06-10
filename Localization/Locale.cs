@@ -1,5 +1,5 @@
 ﻿namespace SwordsOfChat.Localization {
-	internal enum Lang {
+	internal enum Locale {
 		Unset,
 		Czech, Danish, Dutch, English, Estonian, Finnish, French,
 		German, Italian, Japanese, Latvian, Lithuanian, Norwegian,

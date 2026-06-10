@@ -10,18 +10,17 @@ namespace SwordsOfChat.Bot.Commands {
 		public string[] Aliases => ["options"];
 
 		public string? Run(long userId, string[] _) {
-			if (!ResourcesHelper.TryGetText(Key, out string rawText))
-				return null;
-
 			if (!DBController.Instance.TryGetPlayerModel(userId, out PlayerModel? p) || p == null)
 				return null;
 
-			Lang currentLang = p.Language == Lang.Unset ? Lang.English : p.Language;
-			var e0 = $"{LangManager.GetEmojiFlag(currentLang)}{currentLang}";
+			string rawText = LocalesManager.Localize(p.Language, Key, string.Empty);
+
+			Locale currentLang = p.Language == Locale.Unset ? Locale.English : p.Language;
+			var e0 = $"{LocalesManager.GetEmojiFlag(currentLang)}{currentLang}";
 
 			var sb = new System.Text.StringBuilder();
-			for (int i = 0; i < LangManager.All.Length; i++) {
-				Lang l = LangManager.All[i];
+			for (int i = 0; i < LocalesManager.Available.Count; i++) {
+				Locale l = LocalesManager.Available[i];
 				if (l == currentLang)
 					continue;
 
@@ -29,7 +28,7 @@ namespace SwordsOfChat.Bot.Commands {
 				if (sb.Length > 0)
 					sb.Append('\n');
 
-				sb.Append($"Change to {LangManager.GetEmojiFlag(l)}{ls} /{LangBotCommand.Key0}_{ls.ToLower()}");
+				sb.Append($"Change to {LocalesManager.GetEmojiFlag(l)}{ls} /{LangBotCommand.Key0}_{ls.ToLower()}");
 			}
 			var e1 = sb.ToString();
 

@@ -1,6 +1,7 @@
 ﻿using SwordsOfChat.Bot;
 using SwordsOfChat.Commands;
 using SwordsOfChat.Database;
+using SwordsOfChat.Localization;
 using System.Runtime.InteropServices;
 
 namespace SwordsOfChat {
@@ -14,7 +15,7 @@ namespace SwordsOfChat {
 			SetConsoleCtrlHandler(Handler, true);
 
 			BotConfig.TryLoad();
-
+			LocalesManager.Initialize(LocalesManager.DefaultLocale);
 			DBController.Init();
 
 			RegisterCommand(new HelpCommand());
@@ -48,8 +49,6 @@ namespace SwordsOfChat {
 		private static async Task ListenCommands() {
 			while (!AppCts.IsCancellationRequested) {
 				try {
-					Console.Write("> ");
-
 					var readTask = Console.In.ReadLineAsync();
 					var completed = await Task.WhenAny(readTask, Task.Delay(-1, AppCts.Token));
 					if (completed != readTask)

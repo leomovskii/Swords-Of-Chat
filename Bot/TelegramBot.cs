@@ -1,4 +1,5 @@
 ﻿using SwordsOfChat.Bot.Commands;
+using SwordsOfChat.Localization;
 using Telegram.Bot;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
@@ -15,6 +16,11 @@ namespace SwordsOfChat.Bot {
 		public static bool IsRunning { get; private set; }
 
 		public static void Start() {
+			if (!LocalesManager.Valid) {
+				Log.Error("Unable to start bot, lang module not initialized.");
+				return;
+			}
+
 			if (IsRunning) {
 				Log.Error("Fail to start bot: Already started.");
 				return;

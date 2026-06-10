@@ -1,7 +1,0 @@
-﻿⚙️ Settings
-
-🌐 Language: {0}
-{1}
-
-‼️ Rules /rules
-❓ Help /help

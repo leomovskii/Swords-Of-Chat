@@ -18,16 +18,16 @@ namespace SwordsOfChat.Bot.Commands {
 
 			string input = args[1];
 
-			Lang? found = null;
+			Locale? found = null;
 
-			for (int i = 0; i < LangManager.All.Length; i++) {
-				if (!LangManager.All[i].ToString().StartsWith(input, StringComparison.InvariantCultureIgnoreCase))
+			for (int i = 0; i < LocalesManager.Available.Count; i++) {
+				if (!LocalesManager.Available[i].ToString().StartsWith(input, StringComparison.InvariantCultureIgnoreCase))
 					continue;
 
 				if (found != null)
 					return null;
 
-				found = LangManager.All[i];
+				found = LocalesManager.Available[i];
 			}
 
 			if (found == null)
