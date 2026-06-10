@@ -39,5 +39,10 @@
 		public TimeSpan GetNextTime() {
 			return DateTime.UtcNow - Timestamp;
 		}
+
+		public (object, object, object) GetFormatEntries() {
+			var next = Value >= Total ? string.Empty : $" (next in {Utils.GetTimeText(GetNextTime())})";
+			return (Value, Total, next);
+		}
 	}
 }

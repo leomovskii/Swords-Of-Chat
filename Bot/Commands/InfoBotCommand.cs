@@ -84,11 +84,25 @@ namespace SwordsOfChat.Bot.Commands {
 		}
 
 		private string? InfoVigor(long userId) {
-			return null; // todo
+			if (!DBController.Instance.TryGetPlayerModel(userId, out PlayerModel? p) || p == null)
+				return null;
+
+			string rawText = LocalesManager.Localize(p.Locale, "info_vigor", string.Empty);
+
+			(var e0, var e1, var e2) = p.Vigor.GetFormatEntries();
+
+			return string.Format(rawText, e0, e1, e2);
 		}
 
 		private string? InfoMovement(long userId) {
-			return null; // todo
+			if (!DBController.Instance.TryGetPlayerModel(userId, out PlayerModel? p) || p == null)
+				return null;
+
+			string rawText = LocalesManager.Localize(p.Locale, "info_movement", string.Empty);
+
+			(var e0, var e1, var e2) = p.Movement.GetFormatEntries();
+
+			return string.Format(rawText, e0, e1, e2);
 		}
 
 		private string? InfoMoney(long userId) {

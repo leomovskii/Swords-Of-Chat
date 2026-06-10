@@ -31,13 +31,8 @@ namespace SwordsOfChat.Bot.Commands {
 			var e8 = p.Health.Value;
 			var e9 = p.Health.Total;
 
-			var e10 = p.Vigor.Value;
-			var e11 = p.Vigor.Total;
-			var e12 = p.Vigor.Value >= p.Vigor.Total ? string.Empty : $" (next in {Utils.GetTimeText(p.Vigor.GetNextTime())})";
-
-			var e13 = p.Movement.Value;
-			var e14 = p.Movement.Total;
-			var e15 = p.Movement.Value >= p.Movement.Total ? string.Empty : $" (next in {Utils.GetTimeText(p.Movement.GetNextTime())})";
+			(var e10, var e11, var e12) = p.Vigor.GetFormatEntries();
+			(var e13, var e14, var e15) = p.Movement.GetFormatEntries();
 
 			var e16 = p.Money;
 			var e17 = p.Gems;
