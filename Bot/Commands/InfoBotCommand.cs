@@ -9,7 +9,7 @@
 		public InfoBotCommand() {
 			AddInfoCommand("experience", InfoExperience, "exp");
 			AddInfoCommand("health", InfoHealth, "hp");
-			AddInfoCommand("stamina", InfoStamina, ["stam", "sta", "stm"]);
+			AddInfoCommand("vigor", InfoVigor, "vig");
 			AddInfoCommand("movement", InfoMovement, ["mvnt", "move", "mov"]);
 			AddInfoCommand("money", InfoMoney, "mon");
 			AddInfoCommand("gems", InfoGems, "gem");
@@ -60,7 +60,7 @@
 			return null; // todo
 		}
 
-		private string? InfoStamina(long userId) {
+		private string? InfoVigor(long userId) {
 			return null; // todo
 		}
 

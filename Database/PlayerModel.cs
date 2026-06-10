@@ -15,8 +15,8 @@ namespace SwordsOfChat.Database {
 			Health = new(raw.CurrentHealth, raw.TotalHealth, raw.HealthTimestamp);
 			Health.OnChangedEvent += SetChanged;
 
-			Stamina = new(raw.CurrentStamina, raw.TotalStamina, raw.StaminaTimestamp);
-			Stamina.OnChangedEvent += SetChanged;
+			Vigor = new(raw.CurrentVigor, raw.TotalVigor, raw.VigorTimestamp);
+			Vigor.OnChangedEvent += SetChanged;
 
 			Movement = new(raw.CurrentMovement, raw.TotalMovement, raw.MovementTimestamp);
 			Movement.OnChangedEvent += SetChanged;
@@ -88,7 +88,7 @@ namespace SwordsOfChat.Database {
 		#region Parameters
 
 		public Parameter Health { get; private set; }
-		public Parameter Stamina { get; private set; }
+		public Parameter Vigor { get; private set; }
 		public Parameter Movement { get; private set; }
 
 		#endregion

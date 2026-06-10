@@ -17,9 +17,9 @@ namespace SwordsOfChat.Database {
 		public int TotalHealth { get; set; }
 		public long HealthTimestamp { get; set; }
 
-		public int CurrentStamina { get; set; }
-		public int TotalStamina { get; set; }
-		public long StaminaTimestamp { get; set; }
+		public int CurrentVigor { get; set; }
+		public int TotalVigor { get; set; }
+		public long VigorTimestamp { get; set; }
 
 		public int CurrentMovement { get; set; }
 		public int TotalMovement { get; set; }

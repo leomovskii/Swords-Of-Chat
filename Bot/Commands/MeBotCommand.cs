@@ -31,9 +31,9 @@ namespace SwordsOfChat.Bot.Commands {
 			var e8 = p.Health.Value;
 			var e9 = p.Health.Total;
 
-			var e10 = p.Stamina.Value;
-			var e11 = p.Stamina.Total;
-			var e12 = p.Stamina.Value >= p.Stamina.Total ? string.Empty : $" (next in {Utils.GetTimeText(p.Stamina.GetNextTime())})";
+			var e10 = p.Vigor.Value;
+			var e11 = p.Vigor.Total;
+			var e12 = p.Vigor.Value >= p.Vigor.Total ? string.Empty : $" (next in {Utils.GetTimeText(p.Vigor.GetNextTime())})";
 
 			var e13 = p.Movement.Value;
 			var e14 = p.Movement.Total;
