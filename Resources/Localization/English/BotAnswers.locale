@@ -94,3 +94,37 @@ If you find a bug or vulnerability, want to report a violation, suggest an idea,
 
 Advertising proposals are not considered.
 <</rules>>
+
+<<info_experience>>
+🏆 Experience: {0}
+
+Your hero gains experience during adventures. There is no limit to how much Experience your hero can gain. Experience is spent during training to level up stats. Also, a high Experience score is a key factor for some quests and neutral NPCs.
+
+🦉 Wisdom: {1}
+
+Wisdom reflects the absorption of Experience and depends exclusively on your hero's Karma level. For example, if your hero has 90 Wisdom, then from +20 gained Experience, the hero will only absorb +18, with the remaining 2 lost.
+<</info_experience>>
+
+<<info_vigor>>
+🔋 Vigor {0}/{1}{2}
+
+Vigor is a resource that your hero spends on main actions such as Adventure, Arena Battle, and so on. Vigor regenerates passively at +1 per hour. You can also fully restore it by sleeping in your room at a tavern or inn. You can restore Vigor using appropriate potions.
+
+To increase your maximum Vigor, raise your stats. The value is calculated as 2 plus one-third of your total stats (rounded down). For example, you have 12 Strength, 9 Endurance, and 10 Agility. The sum is 31, then divide it by 3 and get 10, add the base value of 2, and get 12.
+<</info_vigor>>
+
+<<info_movement>>
+👣 Movement {0}/{1}{2}
+
+Movement is a resource that your hero spends to move across the map. Movement regenerates passively at +1 per hour. You can also fully restore it by sleeping in your room at a tavern or inn.
+To increase your maximum Movement, get a mount - a horse, camel, or deer.
+
+Note: traveling by caravan does not consume Movement (see /caravan for details).
+<</info_movement>>
+
+<<info>>
+❗️ Info
+
+Available commands:
+{0}
+<</info>>

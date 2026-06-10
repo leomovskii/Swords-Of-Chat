@@ -14,6 +14,31 @@ namespace SwordsOfChat.Game {
 			return "❓ Untitled";
 		}
 
+		#region Karma & Wisdom
+
+		private readonly static int[] KarmaLevels = [100, 200, 500, 700, 800, 900];
+		private readonly static int[] WisdomPerKarmaLevel = [30, 60, 85, 100, 105, 110, 120];
+		private readonly static string[] KarmaNames = ["Damned", "Terrible", "Bad", "Normal", "Good", "Excellent", "Perfect"];
+
+		public static int GetKarmaLevel(int karma) {
+			for (int i = 0; i < KarmaLevels.Length; i++)
+				if (karma < KarmaLevels[i])
+					return i;
+
+			return KarmaLevels.Length;
+		}
+
+		internal static int GetWisdomFor(int karma) {
+			return WisdomPerKarmaLevel[GetKarmaLevel(karma)];
+		}
+
+		public static string GetKarmaName(int karma) {
+			return KarmaNames[GetKarmaLevel(karma)];
+		}
+
+		#endregion
+		#region Location
+
 		public static (int x, int y) LocationToCoords(int location) {
 			return (location % GameConstants.WorldWidth, location / GameConstants.WorldWidth);
 		}
@@ -26,38 +51,6 @@ namespace SwordsOfChat.Game {
 			return $"Untitled, {coords.x + 1}x{coords.y + 1}";
 		}
 
-		public static string GetKarmaName(int level) {
-			if (level < 1)
-				return "Cursed";
-
-			if (level < 50)
-				return "Extremely Low";
-
-			if (level < 100)
-				return "Very Low";
-
-			if (level < 200)
-				return "Low";
-
-			if (level < 400)
-				return "Decreased";
-
-			if (level < 700)
-				return "Normal";
-
-			if (level < 800)
-				return "Good";
-
-			if (level < 900)
-				return "Enhanced";
-
-			if (level < 950)
-				return "High";
-
-			if (level < 999)
-				return "Very High";
-
-			return "Divine";
-		}
+		#endregion
 	}
 }

@@ -11,7 +11,7 @@ namespace SwordsOfChat.Bot.Commands {
 		public string? Run(long userId, string[] _) {
 			bool hasPlayer = DBController.Instance.TryGetPlayerModel(userId, out PlayerModel? p) && p != null;
 
-			string rawText = LocalesManager.Localize(p.Language, Key, string.Empty);
+			string rawText = LocalesManager.Localize(p.Locale, Key, string.Empty);
 
 			int karma = hasPlayer ? p!.Karma : 0;
 			var e0 = $"\n⚜️ Karma: {karma}/{GameConstants.MaxKarmaLevel} ({GameHelper.GetKarmaName(karma)}) /karma\n";

@@ -33,7 +33,7 @@ namespace SwordsOfChat.Bot.Commands {
 			if (found == null)
 				return null;
 
-			p.Language = found.Value;
+			p.Locale = found.Value;
 
 			return $"Language set to {found}.";
 		}

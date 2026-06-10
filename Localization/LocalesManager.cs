@@ -3,7 +3,7 @@
 
 		public const Locale DefaultLocale = Locale.English;
 
-		public readonly static Locale[] All = Enum.GetValues<Locale>()[1..];
+		public readonly static Locale[] All = Enum.GetValues<Locale>();
 		public readonly static List<Locale> Available = [];
 
 		private readonly static Dictionary<Locale, LocaleData> Data = [];

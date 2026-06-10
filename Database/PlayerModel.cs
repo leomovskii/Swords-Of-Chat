@@ -40,11 +40,11 @@ namespace SwordsOfChat.Database {
 			}
 		}
 
-		public Locale Language {
-			get => Raw.Language;
+		public Locale Locale {
+			get => Raw.Locale;
 			set {
-				if (Raw.Language != value) {
-					Raw.Language = value;
+				if (Raw.Locale != value) {
+					Raw.Locale = value;
 					SetChanged();
 				}
 			}

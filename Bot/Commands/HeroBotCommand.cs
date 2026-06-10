@@ -13,7 +13,7 @@ namespace SwordsOfChat.Bot.Commands {
 			if (!DBController.Instance.TryGetPlayerModel(userId, out PlayerModel? p) || p == null)
 				return null;
 
-			string rawText = LocalesManager.Localize(p.Language, Key, string.Empty);
+			string rawText = LocalesManager.Localize(p.Locale, Key, string.Empty);
 
 			bool hasGuild = DBController.Instance.TryGetGuild(p.GuildTag, out Guild guild);
 			var e0 = (hasGuild ? $"[{guild.Tag}] " : string.Empty) + p.Username;

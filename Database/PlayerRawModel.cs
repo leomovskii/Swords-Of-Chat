@@ -1,13 +1,11 @@
-﻿
-using SwordsOfChat.Game;
+﻿using SwordsOfChat.Game;
 using SwordsOfChat.Localization;
-using SwordsOfChat.Purchasing;
 
 namespace SwordsOfChat.Database {
 	internal class PlayerRawModel {
 		public long UserId { get; set; }
 		public string Username { get; set; } = "Player";
-		public Locale Language { get; set; }
+		public Locale Locale { get; set; } = LocalesManager.DefaultLocale;
 
 		public int Karma { get; set; } = GameConstants.InitialKarmaLevel;
 		public int Level { get; set; } = 1;

@@ -1,4 +1,6 @@
-﻿namespace SwordsOfChat.Database {
+﻿using SwordsOfChat.Localization;
+
+namespace SwordsOfChat.Database {
 	internal class RAMDatabase : IDatabase {
 
 		public RAMDatabase() {
@@ -29,6 +31,10 @@
 				return m;
 			}
 			return null;
+		}
+
+		public Locale GetPlayerLocale(long userId) {
+			return Players.TryGetValue(userId, out var p) && p != null ? p.Locale : LocalesManager.DefaultLocale;
 		}
 
 		#endregion

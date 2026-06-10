@@ -13,9 +13,9 @@ namespace SwordsOfChat.Bot.Commands {
 			if (!DBController.Instance.TryGetPlayerModel(userId, out PlayerModel? p) || p == null)
 				return null;
 
-			string rawText = LocalesManager.Localize(p.Language, Key, string.Empty);
+			string rawText = LocalesManager.Localize(p.Locale, Key, string.Empty);
 
-			Locale currentLang = p.Language == Locale.Unset ? Locale.English : p.Language;
+			Locale currentLang = p.Locale;
 			var e0 = $"{LocalesManager.GetEmojiFlag(currentLang)}{currentLang}";
 
 			var sb = new System.Text.StringBuilder();
