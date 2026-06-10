@@ -128,3 +128,24 @@ Note: traveling by caravan does not consume Movement (see /caravan for details).
 Available commands:
 {0}
 <</info>>
+
+<<info_map>>
+🗺 Map
+
+Coordinates are written as two numbers, where 1x1 is the bottom-left corner of the map.
+
+Legend:
+{0}
+
+To move to another location:
+🔼 /up /north
+◀️ /left /west
+▶️ /right /east
+🔽 /down /south
+
+You can add a number to specify a more distant target:
+For example, /up_3 - movement 3 cells up
+
+There's also a command to move to a selected location. For example, to move to location 3x4, write /go_3_4
+Travel takes a lot of time and consumes energy, so you can use caravan services (see /caravan for details)
+<</info_map>>

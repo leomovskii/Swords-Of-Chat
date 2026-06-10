@@ -1,6 +1,7 @@
 ﻿using SwordsOfChat.Database;
 using SwordsOfChat.Game;
 using SwordsOfChat.Localization;
+using System.Text;
 
 namespace SwordsOfChat.Bot.Commands {
 	internal class InfoBotCommand : IBotCommand {
@@ -114,7 +115,16 @@ namespace SwordsOfChat.Bot.Commands {
 		}
 
 		private string? InfoMap(long userId) {
-			return null; // todo
+			if (!DBController.Instance.TryGetPlayerModel(userId, out PlayerModel? p) || p == null)
+				return null;
+
+			string rawText = LocalesManager.Localize(p.Locale, "info_map", string.Empty);
+
+			var sb = new StringBuilder();
+
+
+
+			return string.Format(rawText, sb.ToString());
 		}
 
 		private string? InfoStrength(long userId) {

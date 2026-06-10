@@ -33,5 +33,14 @@
 			int d = (int) Math.Ceiling(ts.TotalDays);
 			return d == 1 ? "1 day" : $"{d} days";
 		}
+
+		public static bool IsFileReadable(string path) {
+			try {
+				using var s = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.Read);
+				return s.CanRead;
+			} catch {
+				return false;
+			}
+		}
 	}
 }

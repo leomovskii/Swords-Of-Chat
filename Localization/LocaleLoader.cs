@@ -37,7 +37,7 @@ namespace SwordsOfChat.Localization {
 				return null;
 			}
 
-			if (!IsFileReadable(path)) {
+			if (!Utils.IsFileReadable(path)) {
 				LogFatal(locale, "Config file is not readable.");
 				return null;
 			}
@@ -101,7 +101,7 @@ namespace SwordsOfChat.Localization {
 		}
 
 		private static Dictionary<string, string>? TryParseLocaleFile(Locale locale, string path) {
-			if (!IsFileReadable(path)) {
+			if (!Utils.IsFileReadable(path)) {
 				LogError(locale, $"Locale file '{path}' is not readable.");
 				return null;
 			}
@@ -226,15 +226,6 @@ namespace SwordsOfChat.Localization {
 			}
 			key = string.Empty;
 			return false;
-		}
-
-		private static bool IsFileReadable(string path) {
-			try {
-				using var s = File.Open(path, FileMode.Open, FileAccess.Read, FileShare.Read);
-				return s.CanRead;
-			} catch {
-				return false;
-			}
 		}
 
 		private static void LogFatal(Locale locale, string message) {

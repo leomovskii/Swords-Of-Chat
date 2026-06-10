@@ -1,0 +1,33 @@
+{
+  "Regions": [
+    "River",
+    "River",
+    "Beach",
+    "Steppe",
+    "Field",
+
+    "Swamp",
+    "Beach",
+    "Steppe",
+    "Steppe",
+    "Field",
+
+    "Grove",
+    "Grove",
+    "Grove",
+    "Hills",
+    "Hills",
+
+    "Forest",
+    "Forest",
+    "Hills",
+    "Mountains",
+    "Volcano",
+
+    "Wildwood",
+    "Forest",
+    "Grove",
+    "Mountains",
+    "Mountains"
+  ]
+}
