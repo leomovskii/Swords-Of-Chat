@@ -1,4 +1,4 @@
-﻿<<me>>
+<<me>>
 <emoji:player> {0}
 <emoji:karma> Karma: {1} ({2})
 <emoji:experience> Experience: {3}
@@ -82,7 +82,7 @@ The administration reserves the right to apply sanctions for violations not expl
 
 <emoji:cargo> Sanctions
 
-The severity of punishment depends on the seriousness of the violation and the damage caused — from temporary restrictions to permanent account bans.
+The severity of punishment depends on the seriousness of the violation and the damage caused - from temporary restrictions to permanent account bans.
 
 The administration reserves the right to restrict access to the project for any player who violates the rules or acts against fair play principles, even if such actions are not explicitly listed above.
 
@@ -90,7 +90,7 @@ In case of significant harm to the project, the administration reserves the righ
 
 <emoji:support> Support
 
-If you find a bug or vulnerability, want to report a violation, suggest an idea, or contact support — use /support.
+If you find a bug or vulnerability, want to report a violation, suggest an idea, or contact support - use /support.
 
 Advertising proposals are not considered.
 <</rules>>
@@ -123,7 +123,7 @@ Note: traveling by caravan does not consume Movement (see /caravan for details).
 <</info_movement>>
 
 <<info>>
-❗️ Info
+<emoji:info> Info
 
 Available commands:
 {0}
