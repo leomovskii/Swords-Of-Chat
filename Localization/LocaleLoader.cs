@@ -73,11 +73,6 @@ namespace SwordsOfChat.Localization {
 				return null;
 			}
 
-			if (string.IsNullOrWhiteSpace(data.Emoji)) {
-				LogFatal(locale, $"Config missing '{data.Emoji}' field.");
-				return null;
-			}
-
 			if (data.Ietf == null || data.Ietf.Length == 0 || string.IsNullOrWhiteSpace(data.Ietf[0])) {
 				LogFatal(locale, $"Config missing '{data.Ietf}' field.");
 				return null;

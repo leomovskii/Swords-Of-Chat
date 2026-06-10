@@ -4,6 +4,7 @@ using Telegram.Bot;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace SwordsOfChat.Bot {
 	internal static class TelegramBot {
@@ -107,7 +108,9 @@ namespace SwordsOfChat.Bot {
 				return;
 			}
 
-			await bot.SendMessage(message.Chat.Id, $"You said: {text}", cancellationToken: ct);
+			string? checkedText = EmojiHelper.WorkOn(text);
+			if (!string.IsNullOrEmpty(checkedText))
+				await bot.SendMessage(message.Chat.Id, $"You said: {checkedText}", cancellationToken: ct);
 		}
 
 		private static async Task HandleCallbackAsync(ITelegramBotClient bot, CallbackQuery query, CancellationToken ct) {
@@ -124,14 +127,16 @@ namespace SwordsOfChat.Bot {
 			return Task.CompletedTask;
 		}
 
-		public static async Task SendMessageAsync(long chatId, string text) {
+		public static async Task SendMessageAsync(long chatId, string? text) {
 			if (_bot == null) {
 				Log.Error("Bot is not initialized.");
 				return;
 			}
 
 			try {
-				await _bot.SendMessage(chatId, text, cancellationToken: _cts!.Token);
+				string? checkedText = EmojiHelper.WorkOn(text);
+				if (!string.IsNullOrEmpty(checkedText))
+					await _bot.SendMessage(chatId, checkedText, cancellationToken: _cts!.Token);
 
 			} catch (Exception ex) {
 				Log.Error($"SendMessageAsync failed: {ex.Message}");
@@ -195,8 +200,9 @@ namespace SwordsOfChat.Bot {
 				Log.Info($"{userId} calls {command.Key} with input '{commandText}'");
 
 				string? response = command.Run(userId, args);
-				if (response != null)
-					await bot.SendMessage(message.Chat.Id, response, cancellationToken: ct);
+				string? checkedText = EmojiHelper.WorkOn(response);
+				if (!string.IsNullOrEmpty(checkedText))
+					await bot.SendMessage(message.Chat.Id, checkedText, cancellationToken: ct);
 
 			} catch (Exception e) {
 				Log.Error(e.Message);

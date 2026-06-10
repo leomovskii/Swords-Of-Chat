@@ -1,6 +1,7 @@
 ﻿using SwordsOfChat.Bot;
 using SwordsOfChat.Commands;
 using SwordsOfChat.Database;
+using SwordsOfChat.Game.Maps;
 using SwordsOfChat.Localization;
 using System.Runtime.InteropServices;
 
@@ -16,7 +17,10 @@ namespace SwordsOfChat {
 
 			BotConfig.TryLoad();
 			LocalesManager.Initialize(LocalesManager.DefaultLocale);
+			EmojiHelper.LoadEmojis();
+
 			DBController.Init();
+			MapsManager.Init();
 
 			RegisterCommand(new HelpCommand());
 			RegisterCommand(new StartCommand());

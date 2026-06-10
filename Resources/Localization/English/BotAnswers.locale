@@ -1,77 +1,77 @@
 ﻿<<me>>
-👤 {0}
-⚜️ Karma: {1} ({2})
-🏆 Experience: {3}
-❤️ Health: {4}/{5}
-🔋 Vigor: {6}/{7}{8}
-👣 Movement: {9}/{10}{11}
-🪙 Money: {12}
-💎 Gems: {13}
+<emoji:player> {0}
+<emoji:karma> Karma: {1} ({2})
+<emoji:experience> Experience: {3}
+<emoji:health> Health: {4}/{5}
+<emoji:vigor> Vigor: {6}/{7}{8}
+<emoji:movement> Movement: {9}/{10}{11}
+<emoji:money> Money: {12}
+<emoji:gem> Gems: {13}
 
-📍 {14} /map
+<emoji:map> {14} /map
 
-⚖️ Cargo: {15}/{16} Kg
-🧳 Inventory /inventory
-📜 Hero /hero
+<emoji:cargo> Cargo: {15}/{16} Kg
+<emoji:inventory> Inventory /inventory
+<emoji:hero> Hero /hero
 
-📯 Rank: {17} /prestige
+<emoji:rank> Rank: {17} /prestige
 {18} /guild
 
-💰 Shop /shop
-⚙️ Settings /settings
+<emoji:shop> Shop /shop
+<emoji:settings> Settings /settings
 <</me>>
 
 <<hero>>
-👤 {0}
-⚜️ Karma: {1} ({2}) /karma
-🏆 Experience: {3} /info_exp
-❤️ Health: {4}/{5} /info_hp
-🔋 Vigor: {6}/{7}{8} /info_vig
-👣 Movement: {9}/{10}{11} /info_mov
-🪙 Money: {12} /info_mon
-💎 Gems: {13} /info_gem
+<emoji:player> {0}
+<emoji:karma> Karma: {1} ({2}) /karma
+<emoji:experience> Experience: {3} /info_exp
+<emoji:health> Health: {4}/{5} /info_hp
+<emoji:vigor> Vigor: {6}/{7}{8} /info_vig
+<emoji:movement> Movement: {9}/{10}{11} /info_mov
+<emoji:money> Money: {12} /info_mon
+<emoji:gem> Gems: {13} /info_gem
 
-📍 {14} /map
+<emoji:map> {14} /map
 
-💪 Strength: {15} /info_str
-💪 Endurance: {16} /info_end
-💪 Agility: {17} /info_agi
+<emoji:strength> Strength: {15} /info_str
+<emoji:endurance> Endurance: {16} /info_end
+<emoji:agility> Agility: {17} /info_agi
 
-⚔️ Attack Damage: {18} /info_dmg
-⚡️ Attack Speed: {19} /info_ats
-🛡 Armor: {20} /info_arm
-🗡 Lethality: {21} /info_let
-🎯 Critical Strike Chance: {22} /info_crit_cha
-💥 Critical Strike Damage: {23} /info_crit_dmg
-☄️ Accuracy: {24} /info_acc
-💨 Evasion: {25} /info_eva
-🦶 Tenacity: {26} /info_ten
+<emoji:attack_damage> Attack Damage: {18} /info_dmg
+<emoji:attack_speed> Attack Speed: {19} /info_ats
+<emoji:armor> Armor: {20} /info_arm
+<emoji:lethality> Lethality: {21} /info_let
+<emoji:crit_chance> Critical Strike Chance: {22} /info_crit_cha
+<emoji:crit_damage> Critical Strike Damage: {23} /info_crit_dmg
+<emoji:accuracy> Accuracy: {24} /info_acc
+<emoji:evasion> Evasion: {25} /info_eva
+<emoji:tenacity> Tenacity: {26} /info_ten
 
-⚖️ Cargo: {27}/{28} Kg
-🧳 Inventory /inventory
-📜 Hero /hero
+<emoji:cargo> Cargo: {27}/{28} Kg
+<emoji:inventory> Inventory /inventory
+<emoji:hero> Hero /hero
 
-📯 Rank: {29} /info_rank
+<emoji:rank> Rank: {29} /info_rank
 {30} /guild
 
-💰 Shop /shop
-⚙️ Settings /settings
+<emoji:shop> Shop /shop
+<emoji:settings> Settings /settings
 <</hero>>
 
 <<settings>>
-⚙️ Settings
+<emoji:settings> Settings
 
-🌐 Language: {0}
+<emoji:language> Language: {0}
 {1}
 
-‼️ Rules /rules
-❓ Help /help
+<emoji:rules> Rules /rules
+<emoji:help> Help /help
 <</settings>>
 
 <<rules>>
-‼️ Rules
+<emoji:rules> Rules
 {0}
-🔴 Forbidden
+<emoji:red_dot> Forbidden
 1. Violation of license terms (see /about for details);
 2. Attacks or attempts to disrupt project infrastructure;
 3. Impersonation of administration or official project representatives;
@@ -80,7 +80,7 @@
 
 The administration reserves the right to apply sanctions for violations not explicitly listed in this document.
 
-⚖️ Sanctions
+<emoji:cargo> Sanctions
 
 The severity of punishment depends on the seriousness of the violation and the damage caused — from temporary restrictions to permanent account bans.
 
@@ -88,7 +88,7 @@ The administration reserves the right to restrict access to the project for any 
 
 In case of significant harm to the project, the administration reserves the right to protect its interests through legal channels.
 
-🛠 Support
+<emoji:support> Support
 
 If you find a bug or vulnerability, want to report a violation, suggest an idea, or contact support — use /support.
 
@@ -96,17 +96,17 @@ Advertising proposals are not considered.
 <</rules>>
 
 <<info_experience>>
-🏆 Experience: {0}
+<emoji:experience> Experience: {0}
 
 Your hero gains experience during adventures. There is no limit to how much Experience your hero can gain. Experience is spent during training to level up stats. Also, a high Experience score is a key factor for some quests and neutral NPCs.
 
-🦉 Wisdom: {1}
+<emoji:wisdom> Wisdom: {1}
 
 Wisdom reflects the absorption of Experience and depends exclusively on your hero's Karma level. For example, if your hero has 90 Wisdom, then from +20 gained Experience, the hero will only absorb +18, with the remaining 2 lost.
 <</info_experience>>
 
 <<info_vigor>>
-🔋 Vigor {0}/{1}{2}
+<emoji:vigor> Vigor {0}/{1}{2}
 
 Vigor is a resource that your hero spends on main actions such as Adventure, Arena Battle, and so on. Vigor regenerates passively at +1 per hour. You can also fully restore it by sleeping in your room at a tavern or inn. You can restore Vigor using appropriate potions.
 
@@ -114,7 +114,7 @@ To increase your maximum Vigor, raise your stats. The value is calculated as 2 p
 <</info_vigor>>
 
 <<info_movement>>
-👣 Movement {0}/{1}{2}
+<emoji:movement> Movement {0}/{1}{2}
 
 Movement is a resource that your hero spends to move across the map. Movement regenerates passively at +1 per hour. You can also fully restore it by sleeping in your room at a tavern or inn.
 To increase your maximum Movement, get a mount - a horse, camel, or deer.
@@ -130,7 +130,7 @@ Available commands:
 <</info>>
 
 <<info_map>>
-🗺 Map
+<emoji:world> Map
 
 Coordinates are written as two numbers, where 1x1 is the bottom-left corner of the map.
 
@@ -138,10 +138,10 @@ Legend:
 {0}
 
 To move to another location:
-🔼 /up /north
-◀️ /left /west
-▶️ /right /east
-🔽 /down /south
+<emoji:arrow_up> /up /north
+<emoji:arrow_left> /left /west
+<emoji:arrow_right> /right /east
+<emoji:arrow_down> /down /south
 
 You can add a number to specify a more distant target:
 For example, /up_3 - movement 3 cells up

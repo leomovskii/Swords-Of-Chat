@@ -46,8 +46,8 @@
 			return locale != DefaultLocale ? Localize(DefaultLocale, key, defaultValue) : defaultValue;
 		}
 
-		public static string? GetEmojiFlag(Locale locale) {
-			return Data.TryGetValue(locale, out LocaleData? data) ? data.Emoji : null;
+		public static string? GetIetfTag(Locale locale) {
+			return Data.TryGetValue(locale, out var data) && data != null ? data.Ietf.FirstOrDefault() : null;
 		}
 
 		public static Locale? IetfToLang(string? ietf) {

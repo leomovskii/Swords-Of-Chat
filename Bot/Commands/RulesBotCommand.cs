@@ -14,7 +14,7 @@ namespace SwordsOfChat.Bot.Commands {
 			string rawText = LocalesManager.Localize(p.Locale, Key, string.Empty);
 
 			int karma = hasPlayer ? p!.Karma : 0;
-			var e0 = $"\n⚜️ Karma: {karma}/{GameConstants.MaxKarmaLevel} ({GameHelper.GetKarmaName(karma)}) /karma\n";
+			var e0 = $"\n<emoji:karma> Karma: {karma} ({GameHelper.GetKarmaName(karma)}) /karma\n";
 
 			return string.Format(rawText, e0);
 		}

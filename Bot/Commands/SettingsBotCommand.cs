@@ -15,20 +15,22 @@ namespace SwordsOfChat.Bot.Commands {
 
 			string rawText = LocalesManager.Localize(p.Locale, Key, string.Empty);
 
-			Locale currentLang = p.Locale;
-			var e0 = $"{LocalesManager.GetEmojiFlag(currentLang)}{currentLang}";
+			var tag = LocalesManager.GetIetfTag(p.Locale);
+
+			var e0 = $"<emoji:lang_{tag}>{p.Locale}";
 
 			var sb = new System.Text.StringBuilder();
 			for (int i = 0; i < LocalesManager.Available.Count; i++) {
 				Locale l = LocalesManager.Available[i];
-				if (l == currentLang)
+				if (l == p.Locale)
 					continue;
 
 				string ls = l.ToString();
 				if (sb.Length > 0)
 					sb.Append('\n');
 
-				sb.Append($"Change to {LocalesManager.GetEmojiFlag(l)}{ls} /{LangBotCommand.Key0}_{ls.ToLower()}");
+				tag = LocalesManager.GetIetfTag(p.Locale);
+				sb.Append($"Change to <emoji:lang_{tag}>{ls} /{LangBotCommand.Key0}_{ls.ToLower()}");
 			}
 			var e1 = sb.ToString();
 
