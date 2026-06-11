@@ -1,0 +1,19 @@
+{
+  "Items": [
+    {
+      "Id": "IW000",
+      "Title": "Longbow",
+      "Description": "The Longbow, a titan among bows, demands strength and skill. Its long reach and powerful draw can turn the air into a storm of arrows, raining judgment from afar.",
+      "Weight": 6.4,
+      "Effects": [
+        {
+          "dmg": "22",
+          "ats": 2,
+          "crat": 17,
+          "cpow": 26,
+          "acc": 70
+        }
+      ]
+    }
+  ]
+}
